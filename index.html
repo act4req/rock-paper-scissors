@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="game-container">
+        <h1 class="game-title">Rock Paper Scissors</h1>
+
+        <div id="scoreDisplay" class="score-display">
+            Human: 0 | Computer: 0
+        </div>
+
+        <div id="resultsDisplay" class="results-display">
+            Make your choice to start!
+        </div>
+
+        <div class="button-group">
+            <button id="rockBtn" class="choice-button">Rock</button>
+            <button id="paperBtn" class="choice-button">Paper</button>
+            <button id="scissorsBtn" class="choice-button">Scissors</button>
+        </div>
+
+        <div id="winnerDisplay" class="winner-display"></div>
+
+        <button id="resetBtn" class="reset-button hidden">Play Again</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
